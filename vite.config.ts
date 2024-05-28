@@ -13,7 +13,7 @@ const copyOverPyrightWorker = () =>
 	});
 
 export default defineConfig({
-	base: process.env.NODE_ENV === 'production' ? '/monaco-editor-wrapper/' : '/',
+	base: process.env.BASE ?? '/',
 	plugins: [copyOverPyrightWorker()],
 	optimizeDeps: {
 		esbuildOptions: {
