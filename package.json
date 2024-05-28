@@ -11,5 +11,24 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.2.0"
+  },
+  "dependencies": {
+    "@codingame/esbuild-import-meta-url-plugin": "^1.0.2",
+    "@codingame/monaco-vscode-files-service-override": "~5.1.1",
+    "@codingame/monaco-vscode-python-default-extension": "~5.1.1",
+    "@typefox/pyright-browser": "^1.1.299",
+    "@types/vscode": "^1.89.0",
+    "jszip": "^3.10.1",
+    "monaco-editor": "npm:@codingame/monaco-vscode-editor-api@~5.1.1",
+    "monaco-editor-wrapper": "~5.1.1",
+    "monaco-languageclient": "~8.4.0",
+    "vite-plugin-static-copy": "^1.0.5",
+    "vscode": "npm:@codingame/monaco-vscode-api@~5.1.1",
+    "vscode-languageclient": "~9.0.1",
+    "vscode-languageserver-protocol": "^3.17.5"
+  },
+  "overrides": {
+    "monaco-editor": "$monaco-editor",
+    "vscode": "$vscode"
   }
 }
