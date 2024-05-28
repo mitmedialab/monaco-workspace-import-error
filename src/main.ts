@@ -113,9 +113,14 @@ print("Hello World!")`,
     },
   };
 
+  const loggerConfig: UserConfig["loggerConfig"] = {
+    enabled: true,
+    debugEnabled: true,
+  }
+
   const wrapper = new MonacoEditorLanguageClientWrapper();
 
-  await wrapper.init({ wrapperConfig, languageClientConfig });
+  await wrapper.init({ wrapperConfig, languageClientConfig, loggerConfig });
   await vscode.workspace.openTextDocument(hello2Py.uri);
   await vscode.workspace.openTextDocument(helloPy.uri);
   await wrapper.start(htmlElement);
