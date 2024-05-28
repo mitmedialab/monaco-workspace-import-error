@@ -11,3 +11,4 @@ npm install
 npm run dev
 ```
 
+## Linked to [monaco-languageclient Issue 667](https://github.com/TypeFox/monaco-languageclient/issues/667)
